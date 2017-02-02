@@ -4,6 +4,8 @@ int r = 0;
 
   RecursionExample recursion = new RecursionExample();
   System.out.println(recursion.doFactorial(7));
+
+  System.out.println(recursion.doSums(10));
   }
 
   public int doFactorial (int n){
@@ -11,4 +13,12 @@ int r = 0;
     if (n == 1) return 1;
     return n * doFactorial(n-1);
   }
+
+  public int doSums(int n){
+
+    if (n == 0) return 0;
+    return n + doSums(n-1);
+  }
+  
+
 }
